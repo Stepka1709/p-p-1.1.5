@@ -10,14 +10,14 @@ public class Util {
     private static final String DB_PASSWORD = "12345678";
 
     public static Connection getConnection() {
-        Connection conn = null;
+        Connection connection = null;
 
         try {
-            conn = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
+            connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
 
-        return conn;
+        return connection;
     }
 }
