@@ -16,7 +16,7 @@ public class Main {
         userService.saveUser("Владислав", "Смирнов", (byte) 41);
 
         for (User user : userService.getAllUsers()) {
-            System.out.println(user.toString());
+            System.out.println(user);
         }
 
         userService.cleanUsersTable();
